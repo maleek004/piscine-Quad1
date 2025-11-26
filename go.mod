@@ -1,3 +1,3 @@
-module piscine/piscine
+module piscine
 
 go 1.25.4
