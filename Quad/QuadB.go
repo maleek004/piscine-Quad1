@@ -1,11 +1,11 @@
-package piscine
+package Quad
 
 import (
 	"fmt"
 	"strings"
 )
 
-func QuadC(x, y int) {
+func QuadB(x, y int) {
 	if x <= 0 || y <= 0 {
 		return
 	}
@@ -22,12 +22,12 @@ func QuadC(x, y int) {
 
 	}
 
-	printrow("A", "B", "A")
+	printrow("/", "*", "\\")
 	for i := y - 2; i >= 1; i-- {
-		printrow("B", " ", "B")
+		printrow("*", " ", "*")
 	}
 	if y > 1 {
-		printrow("C", "B", "C")
+		printrow("\\", "*", "/")
 	}
 
 }
