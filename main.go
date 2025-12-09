@@ -73,6 +73,46 @@ func main() {
 	CountChar_result := checkpoint.CountChar(githubUserName, 'e')
 	fmt.Println("Result:", CountChar_result)
 
+	// testing the CamelToSnakeCase function
+	fmt.Println(strings.Repeat("=", 10))
+	fmt.Println("Testing the CamelToSnakeCase function (from checkpoint) ")
+	fmt.Println(checkpoint.CamelToSnakeCase("HelloWorld"))
+	fmt.Println(checkpoint.CamelToSnakeCase("helloWorld"))
+	fmt.Println(checkpoint.CamelToSnakeCase("camelCase"))
+	fmt.Println(checkpoint.CamelToSnakeCase("CAMELtoSnackCASE"))
+	fmt.Println(checkpoint.CamelToSnakeCase("camelToSnakeCase"))
+	fmt.Println(checkpoint.CamelToSnakeCase("hey2"))
+	fmt.Println("----------------------- I still need to work on the camelcase code")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	if len(os.Args) != 10 {
 		fmt.Println("Error")
 		return // Stop the program
