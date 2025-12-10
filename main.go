@@ -84,34 +84,13 @@ func main() {
 	fmt.Println(checkpoint.CamelToSnakeCase("hey2"))
 	fmt.Println("----------------------- I still need to work on the camelcase code")
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+	// testing the FoodDeliveryTime function
+	fmt.Println(strings.Repeat("=", 10))
+	fmt.Println("Testing the FoodDeliveryTime function (from checkpoint) ")
+	fmt.Println(checkpoint.FoodDeliveryTime("burger"))
+	fmt.Println(checkpoint.FoodDeliveryTime("chips"))
+	fmt.Println(checkpoint.FoodDeliveryTime("nuggets"))
+	fmt.Println(checkpoint.FoodDeliveryTime("burger") + checkpoint.FoodDeliveryTime("chips") + checkpoint.FoodDeliveryTime("nuggets"))
 
 	if len(os.Args) != 10 {
 		fmt.Println("Error")
