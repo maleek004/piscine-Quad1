@@ -118,6 +118,12 @@ func main() {
     fmt.Println(checkpoint.Itoa(987654321))
 	fmt.Println("!!!!!!!!!!!I DONT FULLY UNDERSTAND THE LOGIC HERE YET !!!!!!!!!!!!!!!!!")
 
+	// testing the FindPrevPrime function
+	fmt.Println(strings.Repeat("=", 10))
+	fmt.Println("Testing the FindPrevPrime function (from checkpoint) ")
+	fmt.Println(checkpoint.FindPrevPrime(5))
+	fmt.Println(checkpoint.FindPrevPrime(4))
+
 	// testing the sudoku solver
 	fmt.Println(strings.Repeat("=", 10))
 	fmt.Println("Testing the sudoku solver ")
