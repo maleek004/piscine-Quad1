@@ -100,8 +100,21 @@ func main() {
 	fmt.Println(checkpoint.Gcd(14, 77))
 	fmt.Println(checkpoint.Gcd(17, 3))
 
+
+	// testing the HashCode function
+	fmt.Println(strings.Repeat("=", 10))
+	fmt.Println("Testing the HashCode function (from checkpoint) ")
+	fmt.Println(checkpoint.HashCode("A"))
+	fmt.Println(checkpoint.HashCode("AB"))
+	fmt.Println(checkpoint.HashCode("BAC"))
+	fmt.Println(checkpoint.HashCode("Hello World"))
+
+
+	// testing the sudoku solver
+	fmt.Println(strings.Repeat("=", 10))
+	fmt.Println("Testing the sudoku solver ")
 	if len(os.Args) != 10 {
-		fmt.Println("Error")
+		fmt.Println("Error, input a valid sudoku with 9 rows to solve")
 		return // Stop the program
 	}
 
