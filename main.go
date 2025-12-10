@@ -109,6 +109,14 @@ func main() {
 	fmt.Println(checkpoint.HashCode("BAC"))
 	fmt.Println(checkpoint.HashCode("Hello World"))
 
+	// testing the Itoa function
+	fmt.Println(strings.Repeat("=", 10))
+	fmt.Println("Testing the Itoa function (from checkpoint) ")
+	fmt.Println(checkpoint.Itoa(12345))
+    fmt.Println(checkpoint.Itoa(0))
+    fmt.Println(checkpoint.Itoa(-1234))
+    fmt.Println(checkpoint.Itoa(987654321))
+	fmt.Println("!!!!!!!!!!!I DONT FULLY UNDERSTAND THE LOGIC HERE YET !!!!!!!!!!!!!!!!!")
 
 	// testing the sudoku solver
 	fmt.Println(strings.Repeat("=", 10))
