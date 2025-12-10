@@ -7,8 +7,8 @@ func Gcd(a, b uint) uint {
 		return 0
 	}
 
-	for b != 0{
-		a,b = b, a%b
+	for b != 0 {
+		a, b = b, a%b
 	}
 	return a
 }

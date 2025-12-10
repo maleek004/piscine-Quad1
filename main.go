@@ -92,7 +92,6 @@ func main() {
 	fmt.Println(checkpoint.FoodDeliveryTime("nuggets"))
 	fmt.Println(checkpoint.FoodDeliveryTime("burger") + checkpoint.FoodDeliveryTime("chips") + checkpoint.FoodDeliveryTime("nuggets"))
 
-	
 	// testing the Gcd function
 	fmt.Println(strings.Repeat("=", 10))
 	fmt.Println("Testing the Gcd function (from checkpoint) ")
@@ -100,7 +99,7 @@ func main() {
 	fmt.Println(checkpoint.Gcd(42, 12))
 	fmt.Println(checkpoint.Gcd(14, 77))
 	fmt.Println(checkpoint.Gcd(17, 3))
-	
+
 	if len(os.Args) != 10 {
 		fmt.Println("Error")
 		return // Stop the program
