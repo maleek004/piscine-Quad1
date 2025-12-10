@@ -124,6 +124,13 @@ func main() {
 	fmt.Println(checkpoint.FindPrevPrime(5))
 	fmt.Println(checkpoint.FindPrevPrime(4))
 
+
+	// testing the PrintMemory function
+	fmt.Println(strings.Repeat("=", 10))
+	fmt.Println("Testing the PrintMemory function (from checkpoint) ")
+	data := [10]byte{72, 101, 108, 108, 111, 0, 10, 33, 35, 127}
+	checkpoint.PrintMemory(data)
+
 	// testing the sudoku solver
 	fmt.Println(strings.Repeat("=", 10))
 	fmt.Println("Testing the sudoku solver ")
