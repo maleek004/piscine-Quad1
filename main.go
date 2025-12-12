@@ -100,7 +100,6 @@ func main() {
 	fmt.Println(checkpoint.Gcd(14, 77))
 	fmt.Println(checkpoint.Gcd(17, 3))
 
-
 	// testing the HashCode function
 	fmt.Println(strings.Repeat("=", 10))
 	fmt.Println("Testing the HashCode function (from checkpoint) ")
@@ -113,23 +112,81 @@ func main() {
 	fmt.Println(strings.Repeat("=", 10))
 	fmt.Println("Testing the Itoa function (from checkpoint) ")
 	fmt.Println(checkpoint.Itoa(12345))
-    fmt.Println(checkpoint.Itoa(0))
-    fmt.Println(checkpoint.Itoa(-1234))
-    fmt.Println(checkpoint.Itoa(987654321))
+	fmt.Println(checkpoint.Itoa(0))
+	fmt.Println(checkpoint.Itoa(-1234))
+	fmt.Println(checkpoint.Itoa(987654321))
 	fmt.Println("!!!!!!!!!!!I DONT FULLY UNDERSTAND THE LOGIC HERE YET !!!!!!!!!!!!!!!!!")
 
 	// testing the FindPrevPrime function
 	fmt.Println(strings.Repeat("=", 10))
 	fmt.Println("Testing the FindPrevPrime function (from checkpoint) ")
+	fmt.Println(checkpoint.FindPrevPrime(9))
 	fmt.Println(checkpoint.FindPrevPrime(5))
 	fmt.Println(checkpoint.FindPrevPrime(4))
-
 
 	// testing the PrintMemory function
 	fmt.Println(strings.Repeat("=", 10))
 	fmt.Println("Testing the PrintMemory function (from checkpoint) ")
 	data := [10]byte{72, 101, 108, 108, 111, 0, 10, 33, 35, 127}
 	checkpoint.PrintMemory(data)
+
+	// testing the DigitLen function
+	fmt.Println(strings.Repeat("=", 10))
+	fmt.Println("Testing the DigitLen function (from checkpoint) ")
+	fmt.Println(checkpoint.DigitLen(100, 10))
+	fmt.Println(checkpoint.DigitLen(100, 2))
+	fmt.Println(checkpoint.DigitLen(-100, 16))
+	fmt.Println(checkpoint.DigitLen(100, -1))
+
+	// testing the FishAndChips function
+	fmt.Println(strings.Repeat("=", 10))
+	fmt.Println("Testing the FishAndChips function (from checkpoint) ")
+	fmt.Println(checkpoint.FishAndChips(4))
+	fmt.Println(checkpoint.FishAndChips(9))
+	fmt.Println(checkpoint.FishAndChips(6))
+	fmt.Println(checkpoint.FishAndChips(7))
+
+	// testing the RepeatAlpha function
+	fmt.Println(strings.Repeat("=", 10))
+	fmt.Println("Testing the RepeatAlpha function (from checkpoint) ")
+	fmt.Println(checkpoint.RepeatAlpha("abc"))
+	fmt.Println(checkpoint.RepeatAlpha("Choumi."))
+	fmt.Println(checkpoint.RepeatAlpha(""))
+	fmt.Println(checkpoint.RepeatAlpha("abacadaba 01!"))
+
+	// testing the FromTo function
+	fmt.Println(strings.Repeat("=", 10))
+	fmt.Println("Testing the FromTo function (from checkpoint) ")
+	fmt.Print(checkpoint.FromTo(1, 10))
+	fmt.Print(checkpoint.FromTo(10, 1))
+	fmt.Print(checkpoint.FromTo(10, 10))
+	fmt.Print(checkpoint.FromTo(100, 10))
+
+	// testing the PrintPrevComb function
+	fmt.Println(strings.Repeat("=", 10))
+	fmt.Println("Testing the PrintPrevComb function (from checkpoint) ")
+	checkpoint.PrintPrevComb()
+
+	// testing the WeAreUnique function
+	fmt.Println(strings.Repeat("=", 10))
+	fmt.Println("Testing the WeAreUnique function (from checkpoint) ")
+	fmt.Println(checkpoint.WeAreUnique("foo", "boo"))
+	fmt.Println(checkpoint.WeAreUnique("", ""))
+	fmt.Println(checkpoint.WeAreUnique("abc", "def"))
+
+	// testing the ZipString function
+	fmt.Println(strings.Repeat("=", 10))
+	fmt.Println("Testing the ZipString function (from checkpoint) ")
+	fmt.Println(checkpoint.ZipString("YouuungFellllas"))
+	fmt.Println(checkpoint.ZipString("Thee quuick browwn fox juumps over the laaazy dog"))
+	fmt.Println(checkpoint.ZipString("Helloo Therre!"))
+
+	// testing the Addprimesum function
+	fmt.Println(strings.Repeat("=", 10))
+	fmt.Println("Testing the Addprimesum function (from checkpoint) ")
+	checkpoint.Addprimesum(5)
+	checkpoint.Addprimesum(7)
+	checkpoint.Addprimesum(-2)
 
 	// testing the sudoku solver
 	fmt.Println(strings.Repeat("=", 10))

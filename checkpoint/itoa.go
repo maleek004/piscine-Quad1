@@ -1,26 +1,48 @@
 package checkpoint
 
+// func Itoa(n int) string {
+// 	if n == 0 {
+// 		return "0"
+// 	}
+
+// 	negative := false
+// 	if n < 0 {
+// 		n = -n
+// 		negative = true
+// 	}
+
+// 	result := ""
+// 	for n > 0 {
+// 		digit := n % 10
+// 		result = string('0'+rune(digit)) + result
+// 		n /= 10
+// 	}
+
+// 	if negative {
+// 		result = "-" + result
+// 	}
+
+// 	return result
+// }
+
 func Itoa(n int) string {
-	if n==0{
+	if n == 0 {
 		return "0"
 	}
 
-	negative := false
-	if n<0{
+	negative := n < 0
+	if negative {
 		n = -n
-		negative = true
 	}
-
 	result := ""
-	for n>0 {
-		digit := n%10
-		result = string('0'+digit) + result 
-		n/= 10
+	for n > 0 {
+		digit := n % 10
+		result = string('0'+digit) + result
+		n /= 10
 	}
 
-	if negative{
-		result = "-" + result
+	if negative {
+		return "-" + result
 	}
-
 	return result
 }
