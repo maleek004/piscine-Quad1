@@ -37,7 +37,7 @@ func Itoa(n int) string {
 	result := ""
 	for n > 0 {
 		digit := n % 10
-		result = string('0'+digit) + result
+		result = string('0'+rune(digit)) + result
 		n /= 10
 	}
 
