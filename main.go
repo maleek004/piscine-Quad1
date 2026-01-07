@@ -141,11 +141,9 @@ func main() {
 	fmt.Println(checkpoint.ZipString("Thee quuick browwn fox juumps over the laaazy dog"))
 	fmt.Println(checkpoint.ZipString("Helloo Therre!"))
 
-	// testing the Addprimesum function
+	// writing the Addprimesum program
 	fmt.Println(strings.Repeat("=", 10))
 	fmt.Println("Testing the Addprimesum function (from checkpoint) ")
-	checkpoint.Addprimesum(5)
-	checkpoint.Addprimesum(7)
-	checkpoint.Addprimesum(-2)
+	checkpoint.AddPrimeSumMain()
 
 }
